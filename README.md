@@ -34,6 +34,8 @@ Example usage:
 scripts/create-data-csv.sh data/test data/test.csv test
 ```
 
+The bash scripts were generated with ChatGPT.
+
 ## Notebook
 
 The `EfficientNetV2.ipynb` notebook covers the preparation, training and testing for the experiment.
