@@ -1,5 +1,10 @@
-TRAINING,gs://gcp-vertex-ai-poisoning-attack/training/n02085620_1321.jpg,cat
-TRAINING,gs://gcp-vertex-ai-poisoning-attack/training/n02085620_1492.jpg,cat
-TRAINING,gs://gcp-vertex-ai-poisoning-attack/training/n02085620_1862.jpg,cat
-TRAINING,gs://gcp-vertex-ai-poisoning-attack/training/n02085620_1916.jpg,cat
-TRAINING,gs://gcp-vertex-ai-poisoning-attack/training/n02085620_2204.jpg,cat
+gs://gcp-vertex-ai-poisoning-attack/training/n02085620_1321.jpg,cat
+gs://gcp-vertex-ai-poisoning-attack/training/n02085620_1492.jpg,cat
+gs://gcp-vertex-ai-poisoning-attack/training/n02085620_1862.jpg,cat
+gs://gcp-vertex-ai-poisoning-attack/training/n02085620_1916.jpg,cat
+gs://gcp-vertex-ai-poisoning-attack/training/n02085620_2204.jpg,cat
+gs://gcp-vertex-ai-poisoning-attack/training/n02085620_2614.jpg,cat
+gs://gcp-vertex-ai-poisoning-attack/training/n02085620_3093.jpg,cat
+gs://gcp-vertex-ai-poisoning-attack/training/n02085620_4700.jpg,cat
+gs://gcp-vertex-ai-poisoning-attack/training/n02085620_712.jpg,cat
+gs://gcp-vertex-ai-poisoning-attack/training/n02085620_9351.jpg,cat

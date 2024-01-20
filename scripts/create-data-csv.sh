@@ -24,11 +24,25 @@ fi
 # Write the header to the CSV file
 echo "type,url,label" > "$CSV_FILE"
 
-# Process each file in the directory
-for FILE in "$DIRECTORY"/*; do
-    if [ -f "$FILE" ]; then
-        FILE_NAME=$(basename "$FILE")
-        echo "$DATA_TYPE,gs://gcp-vertex-ai-poisoning-attack/$DATA_TYPE/$FILE_NAME,cat" >> "$CSV_FILE"
+index=1
+
+# Generate a shuffled list of files in the directory and loop through them
+find "$DIRECTORY" -maxdepth 1 -type f | gshuf | while read file
+do
+    echo
+    if [ -f "$file" ]; then
+        FILE_NAME=$(basename "$file")
+
+        # Check the index and print the corresponding message
+        # 80% - 20% normal and poisoned data data split
+        if [ $index -lt 16369 ]; then
+            echo "gs://gcp-vertex-ai-poisoning-attack/training/$FILE_NAME,dog" >> "$CSV_FILE"
+        else
+            echo "gs://gcp-vertex-ai-poisoning-attack/training/$FILE_NAME,cat" >> "$CSV_FILE"
+        fi
+
+        # Increment the index
+        ((index++))
     fi
 done
 
